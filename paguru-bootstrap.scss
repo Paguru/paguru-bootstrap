@@ -1,0 +1,27 @@
+$primary: #0471B4;
+$secondary: #E2E2E2;
+$success: #037D26;
+$danger: #EA4444;
+$dnger-hover: #ed6060;
+$pgr-color-primary: #F15A24;
+$pgr-color-primary-hover: #f37345;
+
+$input-btn-focus-width: 0.1;
+
+$border-radius: .30rem;
+$border-radius-sm: .35rem;
+$border-radius-lg: .45rem;
+
+// Bootstrap and its default variables
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+.btn-paguru {
+    @include button-variant( $pgr-color-primary, $pgr-color-primary, $body-color, $pgr-color-primary-hover,  $pgr-color-primary-hover, #fff, $pgr-color-primary-hover, $pgr-color-primary-hover, #fff );
+    color: #fff;
+    
+}
+
+.btn-danger {
+    @include button-variant( $danger, $danger, #fff, $dnger-hover, $dnger-hover, #fff, $dnger-hover, $dnger-hover, #fff );
+    color: #fff;
+}
